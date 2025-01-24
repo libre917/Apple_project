@@ -1,0 +1,260 @@
+body {
+    
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header img {
+    width: 42px;
+    height: 50px;
+    margin-left: 10%;
+}
+
+header {
+position: fixed;
+   
+width:99.1%;
+    height: 55px;
+    display: flex;
+    background-color:  rgba(27, 27, 27, 0.805);
+    z-index: 9999;
+}
+.logo{
+  margin-top: -2.5%;
+}
+ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    font-size: 17px;
+    margin-left: 9%;
+}
+
+ul li {
+    color: white;
+    margin-right: 15%;
+    margin-top: 0%;
+
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+.cel{
+    background-image: url("../img_aba_home/Apple-iPhone-15-Pro-bouton-action.webp");
+  position: static;
+   
+    background-repeat: no-repeat; 
+    background-position: right;
+    background-size: 500px;
+    
+    border-radius: 25%
+;
+}
+
+
+.teste {
+   
+   
+    font-size: 17px;
+width: 65vw;
+margin: auto;
+display: block;
+}
+/*seção slides do home*/
+.imagens{
+  margin-top: 5%;
+  margin-bottom: 13%;
+  margin-left: 2%;
+  background-size: auto;
+  display: flex;
+ 
+}
+.img1{
+  width: 23%;
+  height: 670px;
+ border:0px solid #ffffff ;
+ background-color: white;
+ border-radius: 7%;
+ margin-right: 2%;
+ box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+ transition: transform 1s;
+ transition: background-color 1s ease;
+
+}
+.img1 img{
+  margin-top: 39%;
+  margin-left: -9%;
+}
+
+
+.img1:hover{
+  background-color: #fddbb7;
+  transform: scale(1.02);
+}
+.img2{
+
+  width: 30%;
+  height: 670px;
+ border:0px solid #ffffff ;
+ background-color: white;
+ border-radius: 10%;
+ margin-right: 2%;
+ box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+ transition: transform 1s;
+ transition: background-color 1s ease;
+
+}
+.img2 img{
+  margin-left: 4%;
+}
+
+.img2:hover{
+  background-color: #9bfe9f;
+  transform: scale(1.02);
+}
+
+.img3{
+  width: 30%;
+  height: 670px;
+ border:0px solid #ffffff ;
+ background-color: white;
+ border-radius: 7%;
+ margin-right: 2%;
+ transition: transform 1s;
+ transition: background-color 1s ease;
+}
+.img3 img{
+margin-left: 7%;
+}
+
+.img3:hover:hover{
+  background-color: #a7d0ff;
+  transform: scale(1.02);
+}
+.img4{
+  width: 30%;
+  height: 670px;
+ border:0px solid #ffffff ;
+ background-color: white;
+ border-radius: 7%;
+ margin-right: 2%;
+ transition: transform 1s;
+ transition: background-color 1s ease;
+}
+
+.img4 img{
+  margin-top: 40%;
+  margin-left: 10%;
+
+}
+
+.img4:hover{
+  background-color: rgb(255, 154, 154);
+  transform: scale(1.02);
+}
+footer {
+    background-color: rgb(44, 44, 44);
+    border-top:2px solid rgb(58, 58, 58);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.copy{
+    margin: 15px 0; color: #8b8b8b;
+}
+.imagem{
+    margin-top: 3%;
+    background-size: auto;
+    margin-left: 20%;
+    border-bottom:2px solid #49494988;
+    border-radius: 30px;
+    animation:  1.3s bounce reverse;
+   
+}
+.barra{
+    margin-top: -3%;
+    border: 2px solid #494949 ;
+    display: flex;
+    border-radius: 25px;
+  
+    width: 250px;
+    text-decoration-color: rgb(255, 255, 255);
+}
+input[type="text"] {
+    border: none;
+    margin-left: 1%;
+    width: 100%;
+    outline: none;
+    background-color: #8b8b8b00;
+    color: rgb(255, 255, 255);
+    
+}
+button {
+    
+    appearance: none;
+    background-color: #fafbfc;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow:
+      rgba(0, 0, 0, 0.04) 0 1px 0,
+      rgba(0, 0, 0, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292e;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+  }
+  
+  button:hover {
+    background-color: #f3f4f6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+  }
+  
+  button:disabled {
+    background-color: #fafbfc;
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #000000;
+    cursor: default;
+  }
+  
+  button:active {
+    background-color: #edeff2;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0 inset;
+    transition: none 1s;
+  }
+  
+  button:focus {
+    outline: 1px transparent;
+  }
+  
+  button:before {
+    display: none;
+  }
+  
+  button:-webkit-details-marker {
+    display: none;
+  }
+  
+
+
+
+/*teste */
+
+

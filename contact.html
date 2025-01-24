@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="icon" type="image/x-icon" href="./img_aba_home/logo_preto_apple.png">
+
+    <title>contact</title>
+</head>
+
+<body>
+    <header>
+        <a href="home 1.html">
+            <img src="./img_aba_privacidade/seta.png">
+            <div>Voltar</div>
+        </a>
+    </header>
+    <div class="pri">
+        <h1>
+            <img src="./img_aba_privacidade/logo_preto_apple.png"><br> Contato
+        </h1>
+        <div class="texto">
+            <p>
+                Queremos ouvir você! A Apple oferece várias formas de suporte e atendimento para ajudar com suas
+                dúvidas, solicitações ou problemas. Se precisar de assistência, entre em contato conosco por um
+                dos canais abaixo:<br>
+                Suporte ao Cliente
+                Central de Ajuda Online: Acesse nossa central de suporte para encontrar respostas a perguntas
+                frequentes,
+                tutoriais e guias para solucionar problemas de produtos Apple.<br><br>
+        </div>
+        <div class="from">
+            <div class="formulario">
+                <form id="contactForm" action="#" method="post">
+                    <b> E-mail:</b> <br> <input placeholder="e-mail@example.com" type="email" name="email" required><br><br>
+                    <b> Relate seus problemas</b><br>
+                    <b> ou dúvidas aqui:</b> <br> <textarea id="reclamacao" name="reclamacao" rows="5" required></textarea><br><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="popup">
+        <p><img src="./img_aba_privacidade/pablo.png"></p>
+        <button id="closePopup">Fechar</button>
+    </div>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const closePopupButton = document.getElementById('closePopup');
+
+        form.onsubmit = function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+        };
+
+        closePopupButton.onclick = function() {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        };
+
+        overlay.onclick = function() {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        };
+    </script>
+
+</body>
+
+</html>
